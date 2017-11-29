@@ -4,38 +4,14 @@
   <title>E-commerce</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="e-commerce.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style media="screen">
-
-  .vertical-space {
-    margin: 20px 0 10px 0;
-  }
-
-  .margin-bottom-20 {
-    margin-bottom: 20px;
-  }
-
-  .padding-0-60 {
-    padding: 0 60px;
-  }
-
-  .padding-0-7pc {
-    padding: 0 7%;
-  }
-
-  .w-100pc {
-    width: 100%;
-  }
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-</style>
 </head>
+
 <body>
+
   <nav class="navbar navbar-inverse padding-0-60">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -47,7 +23,6 @@
         </button>
         <a class="navbar-brand" href="#">E-commerce</a>
       </div>
-
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Canasta</a></li>
@@ -124,13 +99,22 @@
   </div>
 
   <div class="content row padding-0-7pc">
+
+    <!-- Left bar -->
+
     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+
+      <!-- Input buscar -->
+
       <div class="input-group margin-bottom-20">
         <input type="text" class="form-control" placeholder="Buscar camisetas">
         <span class="input-group-btn">
           <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
         </span>
       </div>
+
+      <!-- Categorias -->
+
       <div class="choose-category clearfix visible-md-block visible-lg-block">
         <h4 class="vertical-space">Categorías</h4>
         <ul class="list-group">
@@ -173,9 +157,17 @@
         </ul>
       </div>
     </div>
+
+    <!-- Carousel and products -->
+
     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+
+      <!--Carousel-->
+
       <div id="shirtCarousel" class="carousel slide" data-ride="carousel">
+
         <!-- Indicators -->
+
         <ol class="carousel-indicators">
           <li data-target="#shirtCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#shirtCarousel" data-slide-to="1"></li>
@@ -183,6 +175,7 @@
         </ol>
 
         <!-- Wrapper for slides -->
+
         <div class="carousel-inner">
           <div class="item active">
             <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-1.jpg" alt="Artists" class="w-100pc">
@@ -198,6 +191,7 @@
         </div>
 
         <!-- Left and right controls -->
+
         <a class="left carousel-control" href="#shirtCarousel" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
           <span class="sr-only">Previous</span>
@@ -207,6 +201,9 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+
+      <!-- Productos -->
+
       <div class="row flex-container vertical-space">
         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
           <div class="thumbnail">
@@ -263,6 +260,5 @@
       </div>
     </div>
   </div>
-  <script src="/e-commerce.js"></script>
 </body>
 </html>
